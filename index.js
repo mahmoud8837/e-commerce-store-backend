@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["https://e-commerce-store-frontend-git-main-mahmoud8837s-projects.vercel.app/", "https://e-commerce-storre.netlify.app/"],
+    origin: ["https://e-commerce-store-frontend-git-main-mahmoud8837s-projects.vercel.app/", "https://e-commerce-storre.netlify.app/", "http://127.0.0.1:5500/"],
     credentials: true,
   })
 );
