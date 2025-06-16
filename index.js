@@ -3,7 +3,7 @@ import express from "express";
 import path from "node:path";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-// import cors from "cors";
+import cors from "cors";
 
 // Utils
 import connectDB from "./config/db.js";
@@ -19,12 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// app.use(
-//   cors({
-//     origin: ["http://localhost:5173"],
-//     credentials: true,
-//   })
-// );
+app.use(
+  cors({
+    origin: ["https://e-commerce-store-frontend-git-main-mahmoud8837s-projects.vercel.app/", "https://e-commerce-storre.netlify.app/"],
+    credentials: true,
+  })
+);
 
 import userRoutes from "./routes/userRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
