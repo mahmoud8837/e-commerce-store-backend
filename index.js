@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://e-commerce-storre.netlify.app"],
+    origin: ["http://localhost:5173", "https://e-commerce-storre.netlify.app", "https://e-commerce-store-frontend-gamma.vercel.app"],
     credentials: true,
   })
 );
